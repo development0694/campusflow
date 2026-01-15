@@ -6,7 +6,7 @@ function ChildComponent({sendSum})
 	//function to add two numbers stored in state variable and to be displayed in Parent component
 	function addNumbers()
 	{
-		sum = num1 + num2;
+		const sum = Number(num1) + Number(num2);
 		sendSum(sum);//to send sum into parent
 	}
 	return(
