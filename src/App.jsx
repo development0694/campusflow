@@ -1,16 +1,12 @@
 import { useState } from 'react'
-
+import Parent from './Parent.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-	<div>
-	<h2> University Management System</h2>
-	</div>
-     <p>Home page</p>
-	 <p> User count : {count}</p>
-	 <button onClick={()=>setCount(count+1)}>Increment</button>
+	<h2> Parent Child Communication </h2>
+	<Parent />
     </>
   )
 }
